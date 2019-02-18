@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<title>Ticket Book</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+	<body>
+		<br/><br/><br/><br/>
+		<div class="booking-page">
+	  		<div class="form">
+			<p> Book Tickets </p> 
+			<form class="form" name="ticket" method="POST" action="/booktic">
+				<input type="text" placeholder="First Name" name="fname">
+				<input type="text" placeholder="Last Name" name="lname">
+				<select name="srcc">
+					<option value="ambala">Ambala</option>
+					<option value="delhi">Delhi</option>
+					<option value="chandigarh">Chandigarh</option>
+					<option value="Shimla">Shimla</option>
+				</select>
+				<br/><br/>
+				<select name="dst">
+					<option value="ambala">Ambala</option>
+					<option value="delhi">Delhi</option>
+					<option value="chandigarh">Chandigarh</option>
+					<option value="Shimla">Shimla</option>
+				</select>
+				<br/><br/>
+				Time : <input type="text" placeholder="12:00" name="time"> 
+				Number of Seats : <input type="text" placeholder="Number of Ticket" name="nost" value="0">
+				<button name="Book Tickets">Book Tickets</button>
+		</form>
+	   </div>
+	  </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
